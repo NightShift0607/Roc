@@ -1,0 +1,109 @@
+:root {
+    --background : #363062;
+    --fontcolor : #F5F5F5;
+    --footer : #4D4C7D;
+    --color: #F99417;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--fontcolor);
+}
+
+a {
+    color: var(--fontcolor);
+    text-decoration: none;
+}
+
+main {
+    width: 80%;
+    margin: 0.5vh auto;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 4rem;
+    font-family: "Tilt Neon";
+}
+
+.user_choice {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    margin: 2rem;
+    border: none;
+    color: var(--color);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 10%;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    transition: 200ms;
+}
+
+.rock {
+    background-image: url("images/Rock.png");
+    background-position: 40%;
+    background-size: 110%
+}
+
+.paper {
+    background-image: url("images/Paper.png");
+    background-position: 50%;
+    background-size: 110%;
+}
+
+.scissors {
+    background-image: url("images/Scissors.png");
+    background-position: 40%;
+    background-size: 110%;
+}
+
+.pressed {
+    opacity: 0.4;
+    box-shadow: 0 3px 4px 0 #000;
+}
+
+.computer {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--footer);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: space-evenly;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+footer img:hover {
+    content: url("images/logo2.png");
+    width: 50px;
+    height: 50px;
+}
